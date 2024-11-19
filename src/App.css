@@ -1,0 +1,231 @@
+/* General Reset */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2d3748; /* Dark background for header */
+  color: #ffffff;
+  padding: 1rem 4rem;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Ensure content width remains within boundaries */
+.header .container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Styling */
+.header .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 5rem; /* Adjust height for a larger logo */
+  max-width: 100%; /* Ensure it doesn’t overflow */
+}
+
+/* Menu Styling */
+.header .menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header .menu a:hover {
+  color: #61dafb;
+}
+
+/* Icon Styling with Tooltips */
+.header .icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.header .icons .icon-wrapper {
+  position: relative;
+}
+
+.header .icons img {
+  height: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.header .icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip Styling */
+.header .icons .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -1.8rem; /* Adjust position below the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4a5568;
+  color: #ffffff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  transition: visibility 0.2s ease, opacity 0.2s ease;
+}
+
+.header .icons .icon-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scale-video {
+  width: 100vw; /* Set the width of the video to the viewport width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+}
+
+.hero__title {
+  font-size: 4rem; /* Large title font */
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero__button {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero__button:hover {
+  background-color: #4682b4;
+}
+
+/* Tabs */
+.tabs {
+  position: absolute; /* Positioned at the bottom of the hero */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex; /* Align items in a row */
+  gap: 0.5rem; /* Space between tabs */
+}
+
+.tabs button {
+  width: 8rem; /* Fixed width for square shape */
+  height: 4rem; /* Fixed height for square shape */
+  background-color: #e0e0e0; /* Initial gray color */
+  border: none;
+  border-radius: 5px 5px 0 0; /* Rounded top corners */
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4rem; /* Vertically align text */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tabs button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.tabs button.active {
+  background-color: #2f3a5b; /* Match active tab area color */
+  color: white;
+  border-bottom: 2px solid #2f3a5b; /* Seamless transition into the content area */
+}
+
+/* Tab content styling */
+.tab-content-container {
+  width: 100%; /* Full width to match the hero */
+  padding: 2rem; /* Spacing around the content */
+  background-color: #2f3a5b; /* Light blue background for the active content */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center text */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.tab-content-container h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.tab-content-container p {
+  margin: 0.5rem 0;
+}
+
