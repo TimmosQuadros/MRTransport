@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import {useNavigate} from "react-router-dom";
 
 const HeroSection: React.FC = () => {
     const [activeTab, setActiveTab] = useState<string>('Get in Touch');
+    const navigate = useNavigate();
 
     const tabs = [
         { id: 'Get in Touch', label: 'Contact' },
@@ -28,7 +30,7 @@ const HeroSection: React.FC = () => {
                 <div className="hero__overlay">
                     <h1 className="hero__title">Welcome to MR Transport</h1>
                     <p className="hero__subtitle">Global Logistics, Tailored Solutions</p>
-                    <button className="hero__button">Get Started</button>
+                    <button className="hero__button" onClick={() => navigate('/inquiry')}>Get Started</button>
                 </div>
 
                 {/* Tabs */}

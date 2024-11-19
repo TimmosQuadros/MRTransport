@@ -6,6 +6,7 @@ import HvorforDSV from './pages/HvorforDSV';
 import VoresLosninger from './pages/VoresLosninger';
 import Baeredygtighed from './pages/Baeredygtighed';
 import Karriere from './pages/Karriere';
+import Inquiry from './pages/Inquiry'; // Import the new inquiry page
 import './App.css';
 
 const App: React.FC = () => {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
                 <Route path="/losninger/*" element={<VoresLosninger />} />
                 <Route path="/baeredygtighed" element={<Baeredygtighed />} />
                 <Route path="/karriere" element={<Karriere />} />
+                <Route path="/inquiry" element={<Inquiry />} />
             </Routes>
         </Router>
     );
