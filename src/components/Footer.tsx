@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import twitterIcon from '../assets/icons/twitter.svg';
+import youtubeIcon from '../assets/icons/youtube.svg';
+import instagramIcon from '../assets/icons/instagram.svg';
+import linkedinIcon from '../assets/icons/linkedin.svg';
+import facebookIcon from '../assets/icons/facebook.svg';
+
 
 const Footer: React.FC = () => {
     return (
@@ -33,27 +39,27 @@ const Footer: React.FC = () => {
                     <ul className="footer__list footer__social">
                         <li>
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer__social-link">
-                                <img src="/icons/facebook.svg" alt="Facebook" className="footer__social-icon" />
+                                <img src={facebookIcon} alt="Facebook" className="footer__social-icon" />
                             </a>
                         </li>
                         <li>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer__social-link">
-                                <img src="/icons/linkedin.svg" alt="LinkedIn" className="footer__social-icon" />
+                                <img src={linkedinIcon} alt="LinkedIn" className="footer__social-icon" />
                             </a>
                         </li>
                         <li>
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer__social-link">
-                                <img src="/icons/instagram.svg" alt="Instagram" className="footer__social-icon" />
+                                <img src={instagramIcon} alt="Instagram" className="footer__social-icon" />
                             </a>
                         </li>
                         <li>
                             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="footer__social-link">
-                                <img src="/icons/youtube.svg" alt="YouTube" className="footer__social-icon" />
+                                <img src={youtubeIcon} alt="YouTube" className="footer__social-icon" />
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer__social-link">
-                                <img src="/icons/twitter.svg" alt="Twitter" className="footer__social-icon" />
+                                <img src={twitterIcon} alt="Twitter" className="footer__social-icon" />
                             </a>
                         </li>
                     </ul>
