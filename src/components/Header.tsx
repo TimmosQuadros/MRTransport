@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
                 {/* Navigation Menu */}
                 <nav className="menu">
-                <Link to="/hvorfor-dsv">Hvorfor DSV</Link>
+                <Link to="/hvorfor-dsv">Hvorfor MR Transport</Link>
                     <Link to="/losninger">Vores Løsninger</Link>
                     <Link to="/baeredygtighed">Bæredygtighed</Link>
                     <Link to="/karriere">Karriere</Link>

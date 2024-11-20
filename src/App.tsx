@@ -8,6 +8,7 @@ import Baeredygtighed from './pages/Baeredygtighed';
 import Karriere from './pages/Karriere';
 import Inquiry from './pages/Inquiry'; // Import the new inquiry page
 import './App.css';
+import Footer from "./components/Footer.tsx";
 
 const App: React.FC = () => {
     return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
                 <Route path="/karriere" element={<Karriere />} />
                 <Route path="/inquiry" element={<Inquiry />} />
             </Routes>
+            <Footer />
         </Router>
     );
 };
