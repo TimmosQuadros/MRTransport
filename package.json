@@ -12,9 +12,13 @@
   "dependencies": {
     "@netlify/functions": "^2.8.2",
     "@types/nodemailer": "^6.4.17",
+    "i18next": "^24.0.0",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^3.0.1",
     "nodemailer": "^6.9.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-i18next": "^15.1.1",
     "react-router-dom": "^6.28.0"
   },
   "devDependencies": {

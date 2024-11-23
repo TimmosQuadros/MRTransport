@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import {useNavigate} from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import {} from "i18next";
 
 const HeroSection: React.FC = () => {
     const [activeTab, setActiveTab] = useState<string>('Get in Touch');
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     const tabs = [
         { id: 'Get in Touch', label: 'Contact' },
@@ -28,7 +31,7 @@ const HeroSection: React.FC = () => {
 
                 {/* Overlay Content */}
                 <div className="hero__overlay">
-                    <h1 className="hero__title">Welcome to MR Transport</h1>
+                    <h1 className="hero__title">{t('welcome')}</h1>
                     <p className="hero__subtitle">Global Logistics, Tailored Solutions</p>
                     <button className="hero__button" onClick={() => navigate('/inquiry')}>Get Started</button>
                 </div>
@@ -54,18 +57,21 @@ const HeroSection: React.FC = () => {
                         <h2>Contact Us</h2>
                         <p>Email: info@mrtransport.com</p>
                         <p>Phone: +123 456 7890</p>
+                        <button className="hero__button" onClick={() => navigate('/contact')}>Contact</button>
                     </div>
                 )}
                 {activeTab === 'Cars' && (
                     <div>
                         <h2>Our Fleet</h2>
                         <p>Explore our range of transportation vehicles.</p>
+                        <button className="hero__button" onClick={() => navigate('/fleet')}>Fleet</button>
                     </div>
                 )}
                 {activeTab === 'Staff' && (
                     <div>
                         <h2>Our Team</h2>
                         <p>Meet the professionals behind MR Transport.</p>
+                        <button className="hero__button" onClick={() => navigate('/team')}>Team</button>
                     </div>
                 )}
             </div>

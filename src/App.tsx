@@ -15,6 +15,7 @@ import Contact from "./pages/Contact.tsx";
 import Services from "./pages/Services.tsx";
 import Pricing from "./pages/Pricing.tsx";
 import Team from "./pages/Team.tsx";
+import SearchResults from "./pages/SearchResults.tsx";
 
 const App: React.FC = () => {
     return (
@@ -36,6 +37,7 @@ const App: React.FC = () => {
                 <Route path="/services" element={<Services />} />
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/team" element={<Team />} />
+                <Route path="/search" element={<SearchResults />} />
             </Routes>
             <Footer />
         </Router>
