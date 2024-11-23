@@ -9,7 +9,7 @@ i18n
     .use(initReactI18next) // Pass the i18n instance to React
     .init({
         fallbackLng: 'en-US',
-        debug: true,
+        debug: false,
         interpolation: {
             escapeValue: false, // React already escapes by default
         },

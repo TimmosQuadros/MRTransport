@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
 
-const VoresLosninger: React.FC = () => {
+const Solutions: React.FC = () => {
     const navigate = useNavigate();
     return (
         <div className="solutions-container">
@@ -55,4 +55,4 @@ const VoresLosninger: React.FC = () => {
     );
 };
 
-export default VoresLosninger;
+export default Solutions;

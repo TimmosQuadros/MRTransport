@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Baeredygtighed: React.FC = () => {
+const Sustainability: React.FC = () => {
     return (
         <div className="sustainability-container">
             {/* Hero Section */}
@@ -52,4 +52,4 @@ const Baeredygtighed: React.FC = () => {
     );
 };
 
-export default Baeredygtighed;
+export default Sustainability;

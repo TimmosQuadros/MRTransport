@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BodyLayout from './components/Header';
 import Home from './pages/Home';
-import HvorforDSV from './pages/HvorforDSV';
-import VoresLosninger from './pages/VoresLosninger';
-import Baeredygtighed from './pages/Baeredygtighed';
-import Karriere from './pages/Karriere';
+import Why from './pages/Why.tsx';
+import Solutions from './pages/Solutions.tsx';
+import Sustainability from './pages/Sustainability.tsx';
+import Career from './pages/Career.tsx';
 import Inquiry from './pages/Inquiry'; // Import the new inquiry page
 import './App.css';
 import Footer from "./components/Footer.tsx";
@@ -26,10 +26,10 @@ const App: React.FC = () => {
             {/* Define your routes */}
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/hvorfor-dsv/*" element={<HvorforDSV />} />
-                <Route path="/losninger/*" element={<VoresLosninger />} />
-                <Route path="/baeredygtighed" element={<Baeredygtighed />} />
-                <Route path="/karriere" element={<Karriere />} />
+                <Route path="/why/*" element={<Why />} />
+                <Route path="/solutions/*" element={<Solutions />} />
+                <Route path="/sustainability" element={<Sustainability />} />
+                <Route path="/career" element={<Career />} />
                 <Route path="/inquiry" element={<Inquiry />} />
                 <Route path="/fleet" element={<Fleet />} />
                 <Route path="/about" element={<About />} />

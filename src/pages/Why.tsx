@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
 
-const HvorforDSV: React.FC = () => {
+const Why: React.FC = () => {
     const navigate = useNavigate();
     return (
         <div className="hvorfor-dsv-container">
@@ -45,4 +45,4 @@ const HvorforDSV: React.FC = () => {
     );
 };
 
-export default HvorforDSV;
+export default Why;

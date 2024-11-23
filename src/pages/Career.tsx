@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Karriere: React.FC = () => {
+const Career: React.FC = () => {
     return (
         <div className="career-container">
             {/* Hero Section */}
@@ -70,4 +70,4 @@ const Karriere: React.FC = () => {
     );
 };
 
-export default Karriere;
+export default Career;

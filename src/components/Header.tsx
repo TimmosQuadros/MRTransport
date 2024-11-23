@@ -49,10 +49,10 @@ const Header: React.FC = () => {
 
                 {/* Navigation Menu */}
                 <nav className="menu">
-                    <Link to="/hvorfor-dsv">Hvorfor MR Transport</Link>
-                    <Link to="/losninger">Vores Løsninger</Link>
-                    <Link to="/baeredygtighed">Bæredygtighed</Link>
-                    <Link to="/karriere">Karriere</Link>
+                    <Link to="/why">Hvorfor MR Transport</Link>
+                    <Link to="/solutions">Vores Løsninger</Link>
+                    <Link to="/sustainability">Bæredygtighed</Link>
+                    <Link to="/career">Karriere</Link>
                 </nav>
 
                 {/* Icons with Tooltips */}
